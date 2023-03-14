@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - Bharat Agrawal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon">
+</head>
+
+<body class="">
+
+    <div class="container">
+
+        <!-- Search Field---------------- -->
+        <div class="navbar flexBx">
+            <div class="branding ">
+                <a href="#" class="flexBx">
+                    <img src="./Images/logo.png" alt="">
+                    <h2>Forecast</h2>
+                </a>
+            </div>
+            <div class="search flexBx ">
+                <input type="text" placeholder="Search location" spellcheck="false">
+                <button title="search">
+                    <img src="./Images/search.png" alt="search">
+                </button>
+            </div>
+
+        </div>
+
+
+        <!-- main weather container---------------- -->
+        <div class="weather">
+            <div class="result flexBx">
+                <div class="location flexBx">
+                    <h1 class="city">Search Your City</h1>
+                    <div class="cordT" style="opacity: .5;">
+                        <span class="latitude">lat -, </span>
+                        <span class="longitude"> long -</span>
+                    </div>
+                    <h2 class="temp">-°c</h2>
+                </div>
+                <div class="vector ">
+                    <img src="./Images/sunny_sun.png" class="weather_art">
+                </div>
+            </div>
+            <div class="details flexBx">
+                <span class="flexBx">others
+                    <div class="thm" title="change theme">
+                        <i class="fa-duotone fas fa-star"></i>
+                    </div>
+                </span>
+                <div class="other_details flexBx">
+                    <div class="col">
+                        <img src="./Images/humidity.png" alt="">
+                        <div>
+                            <p class="header">Humidity</p>
+                            <p class="humidity">--</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="./Images/wind-power.png" alt="">
+                        <div>
+                            <p class="header">Wind</p>
+                            <p class="wind">--</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="./Images/uv.png" alt="">
+                        <div>
+                            <p class="header">Max Temperature</p>
+                            <p class="mxTemp">--</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="./Images/pressure.png" alt="">
+                        <div>
+                            <p class="header">Pressure</p>
+                            <p class="pressure">--</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
